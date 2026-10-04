@@ -1,0 +1,199 @@
+:root {
+  --warna-gelap: #2d0000;
+  --warna-aksen: #8acff8;
+  --warna-latar: #f5f5f5;
+  --warna-kartu: #ffffff;
+  --warna-teks: #222222;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--warna-teks);
+  background-color: var(--warna-latar);
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.container {
+  background-color: var(--warna-gelap);
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.navigasi {
+  background-color: var(--warna-aksen);
+}
+
+.navigasi ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navigasi a {
+  display: block;
+  padding: 0.9rem 1.5rem;
+  color: var(--warna-gelap);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navigasi a:hover {
+  background-color: var(--warna-gelap);
+  color: #ffffff;
+}
+
+.tentang {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 3rem auto 2rem;
+  padding: 0 1rem;
+}
+
+.tentang img {
+  width: 265px;
+  height: 256px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.highlight {
+  color: var(--warna-gelap);
+  background-color: var(--warna-aksen);
+  padding: 0 0.3rem;
+  border-radius: 3px;
+  font-weight: 700;
+}
+
+.jadwal {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.jadwal table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--warna-kartu);
+}
+
+.jadwal th,
+.jadwal td {
+  border: 1px solid #999999;
+  padding: 0.6rem 1rem;
+  text-align: left;
+}
+
+.jadwal th {
+  background-color: var(--warna-gelap);
+  color: #ffffff;
+}
+
+.form-kontak {
+  max-width: 420px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: var(--warna-kartu);
+  border: 1px solid #999999;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.form-kontak label {
+  display: block;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.form-kontak .grup {
+  margin-bottom: 1rem;
+}
+
+.form-kontak input {
+  width: 100%;
+  padding: 0.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 1px solid #999999;
+  border-radius: 4px;
+}
+
+.form-kontak button {
+  background-color: var(--warna-aksen);
+  color: var(--warna-gelap);
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-kontak button:hover {
+  background-color: var(--warna-gelap);
+  color: #ffffff;
+}
+
+footer {
+  background-color: var(--warna-gelap);
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .navigasi ul {
+    flex-direction: column;
+  }
+
+  .navigasi a {
+    text-align: center;
+    border-bottom: 1px solid rgba(45, 0, 0, 0.2);
+  }
+
+  .tentang {
+    flex-direction: column;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  .tentang img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .form-kontak {
+    margin: 1rem;
+  }
+}

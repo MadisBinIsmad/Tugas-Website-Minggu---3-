@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" type="image/jpeg" href="./src/img/photo.jpeg" />
+    <title>Dimas Dewa</title>
+    <link rel="stylesheet" href="./src/stye/style.css" />
+  </head>
+  <body>
+    <section>
+      <div>
+        <header class="container">
+          <h1>Dimas Dewa</h1>
+        </header>
+      </div>
+    </section>
+
+    <section>
+      <div class="navigasi">
+        <nav>
+          <ul>
+            <li><a href="Tentang.html" target="_blank">Tentang</a></li>
+            <li><a href="Jadwal.html" target="_blank">Jadwal</a></li>
+            <li><a href="Kontak.html" target="_blank">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <main class="tentang">
+          <img
+            src="./src/img/photo.jpeg"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-repeate="true"
+            alt="Foto Dimas Dewa"
+          />
+          <div>
+            <h2>Tentang Saya</h2>
+            <p>
+              Mahasiswa
+              <span class="highlight">Rekayasa Perangkat Lunak</span> yang suka
+              dengan front-end
+            </p>
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <section>
+      <div class="jadwal">
+        <h2>Jadwal Kuliah</h2>
+        <div>
+          <table>
+            <tr>
+              <th>Hari</th>
+              <th>Mata Kuliah</th>
+              <th>Jam</th>
+            </tr>
+            <tr>
+              <td>Senin</td>
+              <td>Pemrogramman Web</td>
+              <td>08.00</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="form-kontak">
+        <h3>Form Kontak</h3>
+        <form action="">
+          <div class="grup">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              placeholder="Masukkan Username"
+              name="username"
+            />
+          </div>
+
+          <div class="grup">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Masukkan Password"
+              name="password"
+            />
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <footer>
+        <p>&copy; All rights reserved.</p>
+      </footer>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
